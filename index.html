@@ -1,0 +1,108 @@
+<html>
+<head> 
+    <style type="text/css">
+        body {
+            background-color: black;
+            color: aqua;
+            text-align: center;
+        }
+        div {
+            width: 50%;
+            
+            margin: 10px auto;
+            padding : 10px;
+            border : 5px solid red;
+        }
+        div.longText {
+            border: 8px solid coral;
+        }
+        div.shortText {
+            border: 8px solid coral;
+        }
+    </style>
+ 
+</head>
+<body>
+    
+    <h1>Personal Info App</h1>
+       
+    <div class = "longText"><h3>My Summer</h3>
+    <p>Over the summer I played a lot of baseball. I was busy with baseball thursday through sunday, for 6 weeks straight. I was voted to be on the Perfect Game Super 25 Tournament team and the Pastime National Championship Tourney team. </p>
+     <img src="Pastime.jpeg" width = 350>
+        
+        </div>
+   <div class = "shortText"> <h3>Post High School Plans</h3>
+    <p>After high school I hope to be playing baseball at a division one school and continue my accademic career at a university near home. </p>
+       </div>
+    <div class = "shortText">
+         <h3>Baseball</h3>
+    <p> Over the summer, I played baseball for the Michigan Bulls 17u team. We play games Thursday through Friday every week for six weeks straight. We played against nationally ranked teams and players from all over the country. I did very well and had a lot of college scouts notice me and talk to me about playing baseball in college.   
+    </p>
+    <img src="bulls.jpeg" width = 300>
+        </div>
+    <div class = "shortText"><h3>Work</h3>
+    <p>This summer I worked at Inverness Club and I was a lifeguard and swim team coach there. I met a lot of new people and made some friends from other schools. I worked very little during the middle of summer due to me being out of town all the time for baseball. Other than being out of town, at work I had a lot of fun and I got to make a decent amount of money.  
+    </p>
+    <img src="Lights.jpg" width = 300>
+        </div>
+       <script>
+   
+    let person = {
+        //key : value
+        "firstName" : "Spencer",
+        "lastName" : "Atkins",
+        "age" : 17, 
+        "favColor" : "Red",
+        "siblings" :"Elizabeth",
+        "favArtists" : ["Drake", "Kahlid", "Post Malone"],
+        "favSportsTeams": ["Indians", "Browns", "Ohio State Baseball", "Lions"],
+        "favColleges": ["Ohio State", "University of Cincy", "University of Kentucky"],
+        "favGames" : ["CSGO", "Fortnite", "Minecraft","MLB The Show"],
+    }
+    console.log(person)
+    console.log(person.age) 
+        
+       let 
+        
+        elem = document.createElement('div')
+        elem.innerHTML = `<h3>Name</h3>
+${person.firstName} ${person.lastName}`
+         document.body.appendChild(elem)
+       
+        elem = document.createElement('div')
+        elem.innerHTML = `<h3>Age</h3>
+${person.age}`
+         document.body.appendChild(elem)
+           
+           elem = document.createElement('div')
+        elem.innerHTML = `<h3>Favorite Color</h3>
+${person.favColor}`
+         document.body.appendChild(elem)
+           
+             elem = document.createElement('div')
+        elem.innerHTML = `<h3>Siblings</h3>
+${person.siblings}`
+         document.body.appendChild(elem)
+           
+             elem = document.createElement('div')
+        elem.innerHTML = `<h3>Favorite Artist</h3>
+${person.favArtists}`
+         document.body.appendChild(elem)
+           
+             elem = document.createElement('div')
+        elem.innerHTML = `<h3>Favorite Sport Teams</h3>
+${person.favSportsTeams}`
+         document.body.appendChild(elem)
+           
+             elem = document.createElement('div')
+        elem.innerHTML = `<h3>Favorite Colleges</h3>
+${person.favColleges}`
+         document.body.appendChild(elem)
+           
+             elem = document.createElement('div')
+        elem.innerHTML = `<h3>Favorite Games</h3>
+${person.favGames}`
+         document.body.appendChild(elem)
+    </script>
+</body>
+</html>
